@@ -25,3 +25,9 @@ export async function submitIssue(payload, images = []) {
   })
   return data
 }
+
+export async function listIssues(params = {}) {
+  const { page = 1, limit = 5, status, category, priority, q } = params
+  const { data } = await api.get('/api/issues', { params: { page, limit, status, category, priority, q } })
+  return data
+}

@@ -45,7 +45,7 @@ body{background:#f1f5f9;color:var(--text)}
 /* App shell */
 .shell{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
 .sidebar{background:#fff;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:16px;padding:18px 14px}
-.sidebar .logo{font-weight:800;color:var(--primary);padding:10px 8px}
+.sidebar .logo{font-weight:800;color:var(--primary);padding:4px 8px;font-size:30px;}
 .side-nav{display:flex;flex-direction:column;gap:6px}
 .side-nav a{padding:10px 12px;border-radius:10px;color:#0f172a;text-decoration:none}
 .side-nav a.active{background:#eff6ff;color:#1e40af;font-weight:600}

@@ -4,7 +4,7 @@ export default function Layout() {
   return (
     <div className="shell">
       <aside className="sidebar">
-        <div className="logo">✱ Logo</div>
+        <div className="logo">JanSetu</div>
         <nav className="side-nav">
           <NavLink to="/" end className={({isActive}) => isActive ? 'active' : ''}>Home</NavLink>
           <NavLink to="/my-reports" className={({isActive}) => isActive ? 'active' : ''}>My Reports</NavLink>
