@@ -17,9 +17,7 @@ export default function Dashboard() {
     load()
   }, [])
 
-  const total = recent.length > 0
-    ? recent[0].count
-    : stats.byStatus.reduce((a, b) => a + (b.count || 0), 0)
+  const total = stats.byStatus.reduce((a, b) => a + (b.count || 0), 0)
 
   const statusCount = (key) => stats.byStatus.find((s) => s.status === key)?.count || 0
 

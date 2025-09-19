@@ -5,12 +5,13 @@ import IssueDetail from './pages/IssueDetail.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import MyReports from './pages/MyReports.jsx'
 import MapView from './pages/MapView.jsx'
+import Home from './pages/Home.jsx'
 
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}> 
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/my-reports" element={<MyReports />} />
         <Route path="/map" element={<MapView />} />
